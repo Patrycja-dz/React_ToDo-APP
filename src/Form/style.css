@@ -1,0 +1,47 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 25px;
+
+}
+
+@media(max-width:767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__field {
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+.form__field::placeholder {
+    color: #d3d3d3;
+
+}
+
+.form__addTaskButton {
+    padding: 10px;
+    background-color: teal;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form__addTaskButton:hover {
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+.form__addTaskButton:active{
+    background-color: hsl(180, 100%, 35%);
+}
+
+@media(max-width:767px) {
+    .form__addTaskButton:hover {
+        transform: scale(1.0);
+    }
+}
