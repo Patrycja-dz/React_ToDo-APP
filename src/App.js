@@ -1,7 +1,7 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-
+import Section from "./Section";
 const tasks = [
   {id:1, content:"zrobić zadania z CSS battle", done: true},
   {id:2, content:"zrobić projekt na studia", done:false}
@@ -15,24 +15,16 @@ function App() {
     <header>
         <h1>Lista zadań</h1>
     </header>
+<Section
+title = "Dodaj nowe zadanie"
+body = {<Form/>}
+/>
+<Section
+title ="Lista zadań"
+extraContent ={<Buttons tasks = {tasks} taskHideDone = {taskHideDone}/>}
+body={ <Tasks tasks = {tasks} taskHideDone={taskHideDone}/>}/>
 
-    <section className="section">
-        <h2 className="section__heading">Dodaj nowe zadania</h2>
-        <div className="section__wrapper">
-          <Form/>
-        </div>
-    </section>
-
-    <section className="section">
-        <header className="section__header">
-            <h2 className="section__heading">Lista zadań</h2>
-            <Buttons tasks = {tasks} taskHideDone = {taskHideDone}/>
-        </header>
-        <div className="section__wrapper">
-           <Tasks tasks = {tasks} taskHideDone={taskHideDone}/>
-        </div>
-
-    </section>
+   
 </main>
   );
 }
