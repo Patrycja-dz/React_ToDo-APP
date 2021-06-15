@@ -1,8 +1,12 @@
 import "./style.css";
-const Form = () =>(
-    <form className="form">
-    <input placeholder="Co jest do zrobienia?" className="form__field" required/>
+const Form = () => (
+  <form className="form">
+    <input
+      placeholder="Co jest do zrobienia?"
+      className="form__field"
+      required
+    />
     <button className="form__addTaskButton">Dodaj zadanie</button>
-</form>
+  </form>
 );
-export default Form
+export default Form;
