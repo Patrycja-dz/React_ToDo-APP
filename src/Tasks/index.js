@@ -8,12 +8,12 @@ const Tasks = (props) =>(
              <button className="list__button list__button--done">
                  {task.done ? "✓" : ""}
              </button>
-             <span className={`"list__task${task.done ? " list__task--done":""}"`}>
+             <span className={`list__task${task.done ? " list__task--done" : ""}`}>
                  {task.content}
              </span>
-         <button className="list__button list__button--remove">
-           🗑
-         </button></li>
+             <button className="list__button list__button--remove">
+               🗑
+             </button></li>
         ))}
     </ul>
 )
