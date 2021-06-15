@@ -1,5 +1,6 @@
 # TaskerApp
 ![TaskerApp](https://i.postimg.cc/CKj22Phk/todo-gif.gif)
+## 🎥 Preview site: ➡️ [clickHere]( https://patrycja-dz.github.io/React_ToDo-APP/)
 ## Overview
 This is a simple task management app created with React. The application allows you to add tasks, mark those that are finished and delete them.
 
