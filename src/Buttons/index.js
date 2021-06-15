@@ -11,6 +11,7 @@ const Buttons = (props) => {
       </button>
       <button
         className="buttons__btnElement"
+        autofocus
         disabled={props.tasks.every((task) => task.done)}
       >
         Ukończ wszystkie
